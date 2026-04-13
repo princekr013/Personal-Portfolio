@@ -1,0 +1,92 @@
+<!--
+Project Title: Personal Portfolio Website
+Name: Prince Kumar
+Date: 2026
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prince Kumar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Prince Kumar</h1>
+    <p>Passionate Web Developer | AI Enthusiast</p>
+    <button onclick="showMessage()">Click Me</button>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech CSE student with a strong interest in web development,
+        Python programming, and Generative AI. I love building modern,
+        user-friendly applications and exploring new technologies that
+        can solve real-world problems.
+    </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Python</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Generative AI</li>
+    </ul>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>A smart chatbot for medication recommendations using AI.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Cooling Vest System</h3>
+        <p>A wearable cooling vest project for heat management.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Name:</strong> Prince Kumar</p>
+    <p><strong>Email:</strong> ajha4734@gmail.com</p>
+    <p><strong>Phone:</strong> 9798998013</p>
+
+    <button onclick="openDialog()">Contact Me</button>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Prince Kumar Portfolio</p>
+</footer>
+
+<!-- Dialog Box -->
+<div id="dialogBox" class="dialog">
+        <span class="close" onclick="closeDialog()">&times;</span>
+        <h3>Contact Form</h3>
+
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
